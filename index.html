@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="input-container" class="input-container" >
+            <h1>ตารางนัดหมาย</h1>
+            <form id="countDownForm" class="frm" >
+                <label for="">หัวข้อ</label>
+                <input type="text" name="" id="title" class="title">
+                <label for="">วัน/เดือน/ปี</label>
+                <input type="date" name="" id="date-picker" class="data-picker">
+                <button type="submit">บันทึก</button>
+            </form>
+        </div>
+        <div id="countDown" class="countDown" hidden>
+            <h1 id="countDown-title"></h1>
+            <ul>
+                <li><span></span>วัน</li>
+                <li><span></span>ชั่วโมง</li>
+                <li><span></span>นาที</li>
+                <li><span></span>วินาที</li>
+            </ul>
+            <button id="countDown-btn">ยกเลิก</button>
+        </div>
+        <div id="complete" class="complete" hidden>
+            <h1 class="complete-title">แจ้งเตือน</h1>
+            <h1 id = "complete-info" class="complete-info"></h1>
+            <button id="complete-btn">สร้างรายการใหม่</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
